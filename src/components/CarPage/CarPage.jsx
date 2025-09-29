@@ -32,7 +32,7 @@ const CarPage = () => {
   const abortControllerRef = useRef(null);
 
   // base URL for API (use env var in production)
-  const base = "http://localhost:5000";
+  const base = "https://premium-car-project.onrender.com";
 
   // number of cars to fetch (backend should accept limit param)
   const limit = 12;
