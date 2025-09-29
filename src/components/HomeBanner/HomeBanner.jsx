@@ -1,6 +1,5 @@
 // src/components/HeroSleek.jsx
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../../assets/hero.png";
 import { heroStyles as styles } from "../../assets/dummyStyles";
 
 export default function HeroSleek() {
@@ -19,14 +18,14 @@ export default function HeroSleek() {
       const x = (clientX - r.left) / r.width;
       const y = (clientY - r.top) / r.height;
       setMouse({ x, y });
-      el.style.setProperty("--mx", `${x}`);
-      el.style.setProperty("--my", `${y}`);
+      el.style.setProperty("--mx", ${x});
+      el.style.setProperty("--my", ${y});
     }
 
     function onLeave() {
       setMouse({ x: 0.5, y: 0.5 });
-      el.style.setProperty("--mx", `0.5`);
-      el.style.setProperty("--my", `0.5`);
+      el.style.setProperty("--mx", 0.5);
+      el.style.setProperty("--my", 0.5);
     }
 
     el.addEventListener("mousemove", onMove);
@@ -46,6 +45,10 @@ export default function HeroSleek() {
   const tx = (mouse.x - 0.5) * 2 * maxTranslate;
   const ty = (mouse.y - 0.5) * 2 * (maxTranslate * 0.55);
 
+  // remote image URL you provided
+  const remoteImg =
+    "https://tse3.mm.bing.net/th/id/OIP.cjdex9ddQgG7aoM0cNBuDQHaEK?pid=Api&P=0&h=180";
+
   return (
     <div className="">
       <div
@@ -58,16 +61,15 @@ export default function HeroSleek() {
           ref={bgRef}
           className={styles.background}
           style={{
-            transform: `translate3d(${tx * 0.55}px, ${
-              ty * 0.55
-            }px, 0) scale(1.03)`,
+            transform: translate3d(${tx * 0.55}px, ${ty * 0.55}px, 0) scale(1.03),
             transition: "transform 220ms cubic-bezier(.2,.9,.25,1)",
           }}
         >
           <img
-            src={img1}
+            src={remoteImg}
             alt="Futuristic car"
             className="w-full object-center opacity-95"
+            loading="lazy"
           />
 
           <div className={styles.gradientOverlay} />
@@ -137,7 +139,7 @@ export default function HeroSleek() {
           <div className={styles.ctaCard}>
             <div>
               <p className={styles.subtitle}>Carzone</p>
-              <h3 className={styles.title}>Next‑gen Cars. Instant drive.</h3>
+              <h3 className={styles.title}>Next-gen Cars. Instant drive.</h3>
               <p className={styles.description}>
                 Rent Your Dream Car. Transparent pricing. Book in seconds.
               </p>
@@ -156,3 +158,4 @@ export default function HeroSleek() {
     </div>
   );
 }
+ 
