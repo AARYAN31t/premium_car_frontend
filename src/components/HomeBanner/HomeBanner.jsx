@@ -1,6 +1,6 @@
 // src/components/HeroSleek.jsx
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../../assets/"https://tse3.mm.bing.net/th/id/OIP.cjdex9ddQgG7aoM0cNBuDQHaEK?pid=Api&P=0&h=180"";
+import img1 from "../../assets/"hero.png";
 import { heroStyles as styles } from "../../assets/dummyStyles";
 
 export default function HeroSleek() {
@@ -65,7 +65,7 @@ export default function HeroSleek() {
           }}
         >
           <img
-            src={https://tse3.mm.bing.net/th/id/OIP.cjdex9ddQgG7aoM0cNBuDQHaEK?pid=Api&P=0&h=180}
+            src={img1}
             alt="Futuristic car"
             className="w-full object-center opacity-95"
           />
