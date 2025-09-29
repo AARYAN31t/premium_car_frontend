@@ -155,4 +155,4 @@ export default function HeroSleek() {
       </div>
     </div>
   );
-} from this code i want to change my src to add this link "https://tse3.mm.bing.net/th/id/OIP.cjdex9ddQgG7aoM0cNBuDQHaEK?pid=Api&P=0&h=180"
+} 
