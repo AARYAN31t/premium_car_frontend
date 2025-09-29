@@ -65,7 +65,7 @@ export default function HeroSleek() {
           }}
         >
           <img
-            src={img1}
+            src={https://tse3.mm.bing.net/th/id/OIP.cjdex9ddQgG7aoM0cNBuDQHaEK?pid=Api&P=0&h=180}
             alt="Futuristic car"
             className="w-full object-center opacity-95"
           />
