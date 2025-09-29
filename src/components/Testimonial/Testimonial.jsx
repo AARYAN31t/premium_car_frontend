@@ -26,7 +26,7 @@ const Testimonial = () => (
         </div>
 
         <p className={styles.subtitle}>
-          Hear from our valued customers about their journey with our premium fleet
+          Hear from our valued customers about their journey with our premium Cars
         </p>
       </div>
 
