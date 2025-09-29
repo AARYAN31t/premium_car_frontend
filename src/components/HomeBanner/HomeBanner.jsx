@@ -1,6 +1,6 @@
 // src/components/HeroSleek.jsx
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../../assets/Gemini_Generated_Image_tr186str186str18";
+import img1 from "../../assets/Gemini_Generated_Image_tr186str186str18 (1).png";
 import { heroStyles as styles } from "../../assets/dummyStyles";
 
 export default function HeroSleek() {
