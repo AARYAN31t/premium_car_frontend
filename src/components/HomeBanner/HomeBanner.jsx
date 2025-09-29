@@ -17,14 +17,14 @@ export default function HeroSleek() {
       const x = (clientX - r.left) / r.width;
       const y = (clientY - r.top) / r.height;
       setMouse({ x, y });
-      el.style.setProperty("--mx", ${x});
-      el.style.setProperty("--my", ${y});
+      el.style.setProperty("--mx", `${x}`);
+      el.style.setProperty("--my", `${y}`);
     }
 
     function onLeave() {
       setMouse({ x: 0.5, y: 0.5 });
-      el.style.setProperty("--mx", 0.5);
-      el.style.setProperty("--my", 0.5);
+      el.style.setProperty("--mx", `0.5`);
+      el.style.setProperty("--my", `0.5`);
     }
 
     el.addEventListener("mousemove", onMove);
@@ -60,7 +60,7 @@ export default function HeroSleek() {
           ref={bgRef}
           className={styles.background}
           style={{
-            transform: translate3d(${tx * 0.55}px, ${ty * 0.55}px, 0) scale(1.03),
+            transform: `translate3d(${tx * 0.55}px, ${ty * 0.55}px, 0) scale(1.03)`,
             transition: "transform 220ms cubic-bezier(.2,.9,.25,1)",
           }}
         >
