@@ -177,7 +177,7 @@ const SignupPage = () => {
                   style={{ display: "block" }}
                 />
                 <span className="font-bold tracking-wider text-white mt-1">
-                  KARZONE
+                  CARZONE
                 </span>
               </div>
             </div>
