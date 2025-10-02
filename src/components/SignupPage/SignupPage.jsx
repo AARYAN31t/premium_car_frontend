@@ -14,7 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import logo from "../../assets/logocar.png";
-import { signupStyles } from "../../assets/dummyStyles";
+import { signupStyles } from "../../../public/assets/dummyStyles";
 
 const SignupPage = () => {
   const navigate = useNavigate();
@@ -177,7 +177,7 @@ const SignupPage = () => {
                   style={{ display: "block" }}
                 />
                 <span className="font-bold tracking-wider text-white mt-1">
-                  KARZONE
+                  CARZONE
                 </span>
               </div>
             </div>
@@ -345,3 +345,4 @@ const SignupPage = () => {
 };
 
 export default SignupPage;
+
