@@ -123,11 +123,11 @@ const LoginPage = () => {
               <div className={loginStyles.loginCard.logoText}>
                 <img
                   src={logo}
-                  alt="Karzone logo"
+                  alt="Carzone logo"
                   className="h-[1em] w-auto block"
                   style={{ display: "block", objectFit: "contain" }}
                 />
-                <span className="font-bold tracking-wider">KARZONE</span>
+                <span className="font-bold tracking-wider">CARZONE</span>
               </div>
             </div>
 
