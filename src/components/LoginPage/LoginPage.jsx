@@ -127,7 +127,7 @@ const LoginPage = () => {
                   className="h-[1em] w-auto block"
                   style={{ display: "block", objectFit: "contain" }}
                 />
-                <span className="font-bold tracking-wider">KARZONE</span>
+                <span className="font-bold tracking-wider">CARZONE</span>
               </div>
             </div>
 
